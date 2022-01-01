@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import List from './List'
 const StyledWrapper = styled.section`
-  margin: 10rem 0;
+  padding: 0 !important;
   width: 100%;
+  min-height: 200vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
 `
 
 const TopList = () => {

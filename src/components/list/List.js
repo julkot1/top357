@@ -8,30 +8,45 @@ const items = [
     artists: 'qwerty',
     releaseDate: 1979,
     img: 'imgURL',
-    position: 1,
+    spotify: 'url',
+    locate: 1,
   },
   {
     title: 'testsd',
     artists: 'qwerty',
     releaseDate: 1979,
     img: 'imgURL',
-    position: 3,
+    spotify: 'url',
+    locate: 3,
   },
   {
     title: 'tessdt',
     artists: 'qwerty',
     releaseDate: 1979,
     img: 'imgURL',
-    position: 2,
+    spotify: 'url',
+    locate: 2,
+  },
+  {
+    title: 'tessddt',
+    artists: 'qwderty',
+    releaseDate: 1979,
+    img: 'imgURL',
+    spotify: 'url',
+    locate: 4,
   },
 ]
 const compare = (a, b) => {
-  if (a.position < b.position) return -1
+  if (a.locate < b.locate) return -1
   return 1
 }
 const StyledList = styled(motion.ul)`
   list-style: none;
-  width: 80%;
+  width: 60%;
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
+  padding: 0 !important;
 `
 const List = () => {
   return (
