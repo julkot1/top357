@@ -1,5 +1,6 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
+import Footer from './footer/Footer'
 const GlobalStyle = createGlobalStyle`
   html{
     scroll-behavior: smooth;
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <GlobalStyle />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }
